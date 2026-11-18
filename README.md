@@ -26,12 +26,21 @@
 
 <p align="center">
   <b>Frontend</b><br/>
-  <img src="assets/icons-frontend.svg" alt="Frontend" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg" width="48" alt="TypeScript" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="48" alt="JavaScript" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" width="48" alt="React" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Dark.svg" width="48" alt="NextJS" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" width="48" alt="HTML" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" width="48" alt="CSS" />
 </p>
 
 <p align="center">
   <b>Backend</b><br/>
-  <img src="assets/icons-backend.svg" alt="Backend" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg" width="48" alt="NodeJS" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ExpressJS-Dark.svg" width="48" alt="ExpressJS" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NestJS-Dark.svg" width="48" alt="NestJS" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg" width="48" alt="PHP" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Prisma.svg" width="48" alt="Prisma" />
   <br/>
   <img src="assets/badge-yii2.svg" alt="Yii2" />
   <img src="assets/badge-telegram.svg" alt="Telegram Bots" />
@@ -39,7 +48,13 @@
 
 <p align="center">
   <b>Database & DevOps</b><br/>
-  <img src="assets/icons-devops.svg" alt="Database and DevOps" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" width="48" alt="PostgreSQL" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg" width="48" alt="MongoDB" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg" width="48" alt="MySQL" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Docker.svg" width="48" alt="Docker" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Linux-Dark.svg" width="48" alt="Linux" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg" width="48" alt="Git" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="48" alt="Github" />
 </p>
 
 ---
@@ -66,7 +81,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/streak.svg" alt="Contribution streak" />
+  <img src="assets/years.svg" alt="Contributions per year" />
 </p>
 
 ---
