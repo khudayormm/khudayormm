@@ -1,0 +1,71 @@
+name: Update profile assets
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/assets.yml"
+      - "scripts/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate GitHub stats (public + private)
+        env:
+          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          HAS_PAT: ${{ secrets.GH_STATS_TOKEN != '' }}
+        run: |
+          if [ "$HAS_PAT" != "true" ]; then
+            echo "::warning::GH_STATS_TOKEN secret is missing - only public data will be counted"
+          fi
+          node scripts/stats.mjs
+
+      - name: Download static images
+        run: |
+          mkdir -p assets
+          dl() {
+            tmp=$(mktemp)
+            if curl -fsSL --retry 3 --max-time 60 "$2" -o "$tmp" && grep -q "<svg" "$tmp"; then
+              mv "$tmp" "assets/$1"; echo "OK   $1"
+            else
+              rm -f "$tmp"; echo "FAIL $1 (keeping previous file)"
+            fi
+          }
+          dl header.svg "https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Salom%21+I%27m+Khudayor+Mavlonov+%F0%9F%91%8B;Fullstack+Software+Engineer;Next.js+%7C+Node.js+%7C+NestJS+%7C+PostgreSQL;Building+systems+for+universities+%F0%9F%8E%93"
+          dl badge-linkedin.svg "https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+          dl badge-location.svg "https://img.shields.io/badge/Urgench,_Uzbekistan-1E293B?style=for-the-badge&logo=googlemaps&logoColor=38BDF8"
+          dl badge-yii2.svg "https://img.shields.io/badge/Yii2-40B3D8?style=for-the-badge&logo=yii&logoColor=white"
+          dl badge-telegram.svg "https://img.shields.io/badge/Telegram_Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"
+          dl icons-frontend.svg "https://skillicons.dev/icons?i=ts,js,react,nextjs,html,css&theme=dark"
+          dl icons-backend.svg "https://skillicons.dev/icons?i=nodejs,express,nestjs,php,prisma&theme=dark"
+          dl icons-devops.svg "https://skillicons.dev/icons?i=postgres,mongodb,mysql,docker,linux,git,github&theme=dark"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: update profile assets"
+            git push
+          fi
