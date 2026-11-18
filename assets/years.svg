@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="205" viewBox="0 0 650 205" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">
+<style>.fade{opacity:0;animation:fade .6s ease-in-out forwards}@keyframes fade{to{opacity:1}}</style>
+<rect x="0.5" y="0.5" rx="10" width="649" height="204" fill="#1a1b27" stroke="#2a2e45"/>
+<text x="25" y="38" font-size="18" font-weight="700" fill="#70a5fd">Contributions per Year</text>
+<text x="625" y="38" font-size="11" fill="#565f89" text-anchor="end">public + private</text>
+<line x1="25" y1="170" x2="625" y2="170" stroke="#2a2e45"/>
+<g class="fade" style="animation-delay:150ms"><rect x="25.0" y="166.7" width="46" height="3.3" rx="4" fill="#38bdf8"/><text x="48.0" y="159.7" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">26</text><text x="48.0" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2020</text></g>
+<g class="fade" style="animation-delay:250ms"><rect x="117.3" y="168.0" width="46" height="2.0" rx="4" fill="#38bdf8"/><text x="140.3" y="161.0" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">8</text><text x="140.3" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2021</text></g>
+<g class="fade" style="animation-delay:350ms"><rect x="209.7" y="151.2" width="46" height="18.8" rx="4" fill="#38bdf8"/><text x="232.7" y="144.2" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">148</text><text x="232.7" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2022</text></g>
+<g class="fade" style="animation-delay:450ms"><rect x="302.0" y="79.9" width="46" height="90.1" rx="4" fill="#38bdf8"/><text x="325.0" y="72.9" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">711</text><text x="325.0" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2023</text></g>
+<g class="fade" style="animation-delay:550ms"><rect x="394.3" y="87.0" width="46" height="83.0" rx="4" fill="#38bdf8"/><text x="417.3" y="80.0" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">655</text><text x="417.3" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2024</text></g>
+<g class="fade" style="animation-delay:650ms"><rect x="486.7" y="83.8" width="46" height="86.2" rx="4" fill="#38bdf8"/><text x="509.7" y="76.8" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">680</text><text x="509.7" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2025</text></g>
+<g class="fade" style="animation-delay:750ms"><rect x="579.0" y="70.0" width="46" height="100.0" rx="4" fill="#bf91f3"/><text x="602.0" y="63.0" font-size="12" font-weight="700" fill="#c0caf5" text-anchor="middle">789</text><text x="602.0" y="188" font-size="12" fill="#a9b1d6" text-anchor="middle">2026</text></g>
+</svg>
