@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="205" viewBox="0 0 495 205" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">
+<style>.fade{opacity:0;animation:fade .6s ease-in-out forwards}@keyframes fade{to{opacity:1}}</style>
+<rect x="0.5" y="0.5" rx="10" width="494" height="204" fill="#1a1b27" stroke="#2a2e45"/>
+<text x="25" y="38" font-size="18" font-weight="700" fill="#70a5fd">Khudayor's GitHub Stats</text>
+<text x="470" y="38" font-size="11" fill="#565f89" text-anchor="end">public + private</text>
+<g class="fade" style="animation-delay:150ms"><circle cx="31" cy="68" r="4" fill="#38bdf8"/><text x="48" y="72" font-size="13" fill="#a9b1d6" font-weight="600">Total repositories:</text><text x="245" y="72" font-size="13" fill="#c0caf5" font-weight="700">212</text><text x="310" y="72" font-size="11" fill="#565f89">192 private · 20 public</text></g>
+<g class="fade" style="animation-delay:270ms"><circle cx="31" cy="90" r="4" fill="#38bdf8"/><text x="48" y="94" font-size="13" fill="#a9b1d6" font-weight="600">Total contributions:</text><text x="245" y="94" font-size="13" fill="#c0caf5" font-weight="700">3,017</text><text x="310" y="94" font-size="11" fill="#565f89">since 2020</text></g>
+<g class="fade" style="animation-delay:390ms"><circle cx="31" cy="112" r="4" fill="#38bdf8"/><text x="48" y="116" font-size="13" fill="#a9b1d6" font-weight="600">Contributions (last year):</text><text x="245" y="116" font-size="13" fill="#c0caf5" font-weight="700">787</text></g>
+<g class="fade" style="animation-delay:510ms"><circle cx="31" cy="134" r="4" fill="#38bdf8"/><text x="48" y="138" font-size="13" fill="#a9b1d6" font-weight="600">Active days (last year):</text><text x="245" y="138" font-size="13" fill="#c0caf5" font-weight="700">105</text></g>
+<g class="fade" style="animation-delay:630ms"><circle cx="31" cy="156" r="4" fill="#38bdf8"/><text x="48" y="160" font-size="13" fill="#a9b1d6" font-weight="600">Longest streak:</text><text x="245" y="160" font-size="13" fill="#c0caf5" font-weight="700">17 days</text></g>
+<g class="fade" style="animation-delay:750ms"><circle cx="31" cy="178" r="4" fill="#38bdf8"/><text x="48" y="182" font-size="13" fill="#a9b1d6" font-weight="600">Years on GitHub:</text><text x="245" y="182" font-size="13" fill="#c0caf5" font-weight="700">6+</text></g>
+</svg>
